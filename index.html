@@ -9,7 +9,183 @@
 <body>
 <main>
   <h1>GitHub Pages のサンプルです</h1>
- 
+  <div>
+ <form action="#" name="frm1">
+<table>
+    <tr>
+        <th>交通機関</th>
+        <th>単価</th>
+        <th>利用区分</th>
+        <th>合計</th>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>地下鉄</option>
+                <option>従来線</option>
+            </select>
+        </td>
+        <td>    
+            <input type="text" name="row1_price">
+        </td>
+        <td>
+            <select name="row1_sel_traffic" onChange="Calculation()">
+                <option></option>
+                <option>片道</option>
+                <option>往復</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="row1_total">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>地下鉄</option>
+                <option>従来線</option>
+            </select>
+        </td>
+        <td>    
+            <input type="text" name="row2_price">
+        </td>
+        <td>
+            <select name="row2_sel_traffic" onChange="Calculation()">
+                <option></option>
+                <option>片道</option>
+                <option>往復</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="row2_total">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>地下鉄</option>
+                <option>従来線</option>
+            </select>
+        </td>
+        <td>    
+            <input type="text" name="row3_price">
+        </td>
+        <td>
+            <select name="row3_sel_traffic" onChange="Calculation()">
+                <option></option>
+                <option>片道</option>
+                <option>往復</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="row3_total">
+        </td>
+    </tr>
+    <tr>
+        <td align="right" colspan="3"><strong>合計</strong>
+        </td>
+        <td>
+            <input type="text" id="field_total" value="0">
+        </td>
+    </tr>
+</table>
+</form>
+<form action="#" name="frm2">
+<table>
+    <tr>
+        <th>宿泊等</th>
+        <th>単価</th>
+        <th>泊数(数量)</th>
+        <th>合計</th>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>宿泊</option>
+                <option>食費</option>
+                <option>地下鉄</option>
+            </select>
+        </td>
+        <td>    
+            <input type="text" name="row4_price">
+        </td>
+        <td>
+            <select name="row4_sel_cost" onChange="Calculation2()">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="row4_total">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>宿泊</option>
+                <option>食費</option>
+                <option>地下鉄</option>
+            </select>
+        </td>
+        <td>    
+            <input type="text" name="row5_price">
+        </td>
+        <td>
+            <select name="row5_sel_cost" onChange="Calculation2()">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="row5_total">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select>
+                <option>宿泊</option>
+                <option>食費</option>
+                <option>地下鉄</option>
+            </select>
+        </td>
+        <td>    
+            <input type="text" name="row6_price">
+        </td>
+        <td>
+            <select name="row6_sel_cost" onChange="Calculation2()">                   
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" name="row6_total">
+        </td>
+    </tr>
+    <tr>
+        <td align="right" colspan="3"><strong>合計</strong>
+        </td>
+        <td>
+            <input type="text" id="field_total2" value="0">
+        </td>
+    </tr>
+</table>
+</form>
+<form action="#" name="total">総合計
+    <input type="text" id="all_total">
+    <button id="button">確認</button>
+</form>
+<script src="app.js"></script>
+  
+  
+  </div>
+  
+  
 </main>
 
 <script>
